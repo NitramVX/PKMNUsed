@@ -11,18 +11,20 @@
     <title>PKMN TCG USED</title>
 </head>
 <body>
+    <div id="container">
     <div class="line">
     <a href="#" class="used1" id="supp" onclick="lineTrough">SUPPORT USED</a>
     <img id="box1" src="./images/box.png" draggable="false">
     </div>
-    <div class ="line">
+    <div class="line">
     <a href="#" class="used2" id="energy" onmouseup="lineTrough">ENERGY USED</a>
     <img id="box2" src="./images/box.png" draggable="false">
     </div>
-    <div>
+    <div class="line">
     <a href="#" id="reset" onmouseup="reset">RESET</a>
     <img id="box3" src="./images/box.png" draggable="false">
     </div>
+</div>
 
 <script>
     $("div.line").click(function() {
