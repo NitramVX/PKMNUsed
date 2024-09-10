@@ -16,21 +16,21 @@ img#box1{
     width: 450px;
     position: relative;
     z-index: -2;
-    margin-top: -90px;
+    margin-top: -190px;
 }
 
 img#box2{
     width: 450px;
     position: relative;
     z-index: -2;
-    margin-top: -90px;
+    margin-top: -200px;
 }
 
 img#box3{
     width: 350px;
     position: relative;
     z-index: -2;
-    margin-top: -70px;
+    margin-top: -130px;
 }
 
 div {
@@ -46,7 +46,7 @@ a#supp {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 50px;
     display: block;
     margin-top: 120px;
     cursor: pointer;
@@ -56,9 +56,9 @@ a.used2 {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 50px;
     display: block;
-    margin-top: 80px;
+    margin-top: 100px;
     cursor: pointer;
 }
 
@@ -67,8 +67,8 @@ a#reset {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 50px;
+    margin-top: 90px;
     display: block;
     cursor: pointer;
 }
