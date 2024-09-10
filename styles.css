@@ -74,3 +74,65 @@ a#reset {
     display: block;
     cursor: pointer;
 }
+
+@media screen and (max-width: 344px) {
+    body{
+        width: 330px;
+        height: 500px;
+        background-size:610%;
+    }
+    
+    img#box1{
+        pointer-events: none;
+        margin-top: -140px;
+        width:300px;
+        margin-left: -180px;
+    }
+
+    img#box2{
+        width: 300px;
+        margin-top: -140px;
+        margin-left: -180px;
+    }
+
+    img#box3{
+        width: 250px;
+        margin-top: -100px;
+        margin-left: -180px;
+    }
+
+    a#supp {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        width: 320px;
+        display: block;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+
+    a.used2 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        width: 320px;
+        display: block;
+        margin-top: 90px;
+        cursor: pointer;
+    }
+
+    a#reset {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        width:320px;
+        margin-top: 90px;
+        display: block;
+        cursor: pointer;
+    }
+
+
+}
