@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css">
+    <title>PKMN TCG USED</title>
+</head>
+<body>
+    <div class="line">
+    <a href="#" class="used1" id="supp" onclick="lineTrough">SUPPORT USED</a>
+    <img id="box1" src="./images/box.png" draggable="false">
+    </div>
+    <div class ="line">
+    <a href="#" class="used2" id="energy" onmouseup="lineTrough">ENERGY USED</a>
+    <img id="box2" src="./images/box.png" draggable="false">
+    </div>
+    <div>
+    <a href="#" id="reset" onmouseup="reset">RESET</a>
+    <img id="box3" src="./images/box.png" draggable="false">
+    </div>
+
+<script>
+    $("div.line").click(function() {
+  $(this).css("text-decoration", "line-through");
+});
+
+    $("a#reset").click(function() {
+        $("div.line").css("text-decoration", "none");
+    });
+</script>
+
+</html>
