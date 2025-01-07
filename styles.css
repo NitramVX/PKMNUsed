@@ -50,6 +50,10 @@ p {
 }
 
 @media screen and (min-width: 500px) {
+
+    body {
+       width: 100%
+    }
     
     div#container {
         text-align: center;
