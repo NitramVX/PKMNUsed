@@ -49,7 +49,7 @@ p {
     cursor: pointer;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
 
     body {
        width: 100%
