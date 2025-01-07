@@ -10,7 +10,6 @@
 
 body {
     background-image: url("./images/BKGRND.png");
-    background-size: 300vw 100vh;
     background-repeat:no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -33,16 +32,6 @@ div.reset{
     top: 5%;
 }
 
-img {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    top: -150%;
-}
-
-img#box3 {
-    width: 70%;
-}
 
 p {
     font-family: "Press Start 2P", system-ui;
@@ -80,18 +69,21 @@ p {
 }
 
 
-@media screen and (min-height: 830px) and (orientation: landscape) {
+@media screen and (max-height: 800px) and (orientation: landscape) {
 
     body {
         background-size: cover;
         height: 100%;
         width: 100%;
+        background-position: center;
         align-items: unset;
+        margin-top: 3%;
     }        
 
     #container {
         display: flex;
         flex-direction: row-reverse;
+        top: 100%;
         }
 
     img, img#box3 {
