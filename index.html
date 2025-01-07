@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet"  href="styles.css">
     <title>PKMN TCG USED</title>
 </head>
 <body>
     <div id="container">
-    <div class="line">
-    <a href="#" class="used" id="supp" onclick="lineTrough">SUPPORT USED</a>
-    <img id="box1" src="./images/box.png" draggable="false">
+        <div class="line">
+            <p class="used" id="supp">SUPPORT USED</p>
+            <img id="box1" src="./images/box.png" draggable="false">
+        </div>
+        <div class="line">
+            <p class="used" id="energy">ENERGY USED</p>
+            <img id="box2" src="./images/box.png" draggable="false">
+        </div>
+        <div class="line">
+            <p id="reset">RESET</p>
+            <img id="box3" src="./images/box.png" draggable="false">
+        </div>
     </div>
-    <div class="line">
-    <a href="#" class="used" id="energy" onmouseup="lineTrough">ENERGY USED</a>
-    <img id="box2" src="./images/box.png" draggable="false">
-    </div>
-    <div class="line">
-    <a href="#" id="reset" onmouseup="reset">RESET</a>
-    <img id="box3" src="./images/box.png" draggable="false">
-    </div>
-</div>
 
 <script>
-    $("a.used").click(function() {
+    $("p.used").click(function() {
   $(this).css("text-decoration", "line-through");
   $(this).css("text-decoration-thickness","0.7rem");
   $(this).css("text-decoration-color", "red");
 });
 
-    $("a#reset").click(function() {
-        $("a.used").css("text-decoration", "none");
+    $("p#reset").click(function() {
+        $("p.used").css("text-decoration", "none");
     });
 </script>
 

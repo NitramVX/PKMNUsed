@@ -1,4 +1,4 @@
-* {
+*, *:after, *:before {
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,6 @@ div.line {
     width: 100%;
     margin-top: 5%;
     position: relative;
-    text-align: center;
 }
 
 div.reset{
@@ -45,7 +44,7 @@ img#box3 {
     width: 70%;
 }
 
-a {
+p {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -57,10 +56,11 @@ a {
     transform: translate(-50%, -50%);
     z-index: 2;
     font-size: 35px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 500px) {
-
+    
     div#container {
         text-align: center;
         margin-top: 5%;
@@ -77,4 +77,27 @@ a {
     a {
         font-size: 40px;
     }    
+}
+
+
+@media screen and (min-height: 830px) and (orientation: landscape) {
+
+    body {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        align-items: unset;
+    }        
+
+    #container {
+        display: flex;
+        flex-direction: row-reverse;
+        }
+
+    img, img#box3 {
+        width: 90%;        
+    }    
+
+
+
 }
