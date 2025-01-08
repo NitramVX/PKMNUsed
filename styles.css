@@ -1,4 +1,5 @@
 *, *:after, *:before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -11,10 +12,10 @@
 body {
     background-image: url("./images/BKGRND.png");
     background-repeat:no-repeat;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     align-items: center;
-    width: 100%;
 }
 
 div#container {
@@ -33,6 +34,14 @@ div.reset{
     top: 5%;
 }
 
+img {
+    width: 80%;
+}
+
+#box3 {
+    width: 60%;
+}
+
 
 p {
     font-family: "Press Start 2P", system-ui;
@@ -45,15 +54,11 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size: 35px;
+    font-size: 2.5em;
     cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
-
-    body {
-       width: 100%
-    }
     
     div#container {
         text-align: center;
@@ -67,22 +72,21 @@ p {
     img#box3 {
         width: 45%;
     }
-   
-    a {
-        text-align: center:
-        font-size: 80px;
-    }    
+
+    p {
+        font-size: 1.5em;
+    }
+
 }
 
 
-@media screen and (max-height: 800px) and (orientation: landscape) {
+@media screen and (max-height: 835px) and (orientation: landscape) {
 
     body {
         background-size: cover;
+        background-position: center;
         height: 100%;
         width: 100%;
-        background-position: center;
-        align-items: unset;
         margin-top: 3%;
     }        
 
@@ -96,6 +100,8 @@ p {
         width: 90%;        
     }    
 
-
+    p {
+        font-size: 1.8rem;
+    }
 
 }
