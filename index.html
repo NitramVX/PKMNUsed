@@ -32,10 +32,20 @@
     </div>
 
 <script>
-    $("p.used").click(function() {
-  $(this).css("text-decoration", "line-through");
-  $(this).css("text-decoration-thickness","0.7rem");
-  $(this).css("text-decoration-color", "red");
+  $("p.used").click(function() {
+  if ($(this).css("text-decoration").includes("line-through")) {
+    $(this).css({
+      "text-decoration": "none",
+      "text-decoration-thickness": "",
+      "text-decoration-color": ""
+    });
+  } else {
+    $(this).css({
+      "text-decoration": "line-through",
+      "text-decoration-thickness": "0.7rem",
+      "text-decoration-color": "red"
+    });
+  }
 });
 
     $("p#reset").click(function() {
